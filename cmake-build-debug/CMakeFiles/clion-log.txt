@@ -1,0 +1,9 @@
+/snap/clion/152/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/arseny/CLionProjects/fuzzer
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/arseny/.hunter
+-- [hunter] [ Hunter-ID: e14bc15 | Toolchain-ID: 252be92 | Config-ID: 2cb8efb ]
+-- [hunter] NLOHMANN_JSON_ROOT: /home/arseny/.hunter/_Base/e14bc15/252be92/2cb8efb/Install (ver.: 3.6.1)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arseny/CLionProjects/fuzzer/cmake-build-debug
