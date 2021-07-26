@@ -27,6 +27,7 @@ int main(int argc, char* argv[]) {
         return EXIT_FAILURE;
     }
 
+
     nlohmann::json input;
     input_file >> input;
     bool res;
