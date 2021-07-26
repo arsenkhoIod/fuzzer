@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfuzzerd.a CMakeFiles/fuzzer.dir/source/void.cpp.o
-/usr/bin/ranlib libfuzzerd.a

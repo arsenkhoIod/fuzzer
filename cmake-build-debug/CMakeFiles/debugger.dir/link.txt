@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/debugger.dir/debugger/main.cpp.o -o debugger  libfuzzerd.a 
+/usr/bin/c++ -g CMakeFiles/debugger.dir/debugger/main.cpp.o -o debugger 

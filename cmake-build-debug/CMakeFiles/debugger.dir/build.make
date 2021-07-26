@@ -53,10 +53,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/152/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/152/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -98,7 +98,6 @@ debugger_EXTERNAL_OBJECTS =
 
 debugger: CMakeFiles/debugger.dir/debugger/main.cpp.o
 debugger: CMakeFiles/debugger.dir/build.make
-debugger: libfuzzerd.a
 debugger: CMakeFiles/debugger.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable debugger"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/debugger.dir/link.txt --verbose=$(VERBOSE)

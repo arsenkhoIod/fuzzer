@@ -6,55 +6,59 @@
 
 #IncludeRegexTransform: 
 
-../include/abstract_input_generator.hpp
+../include/abstract/input_generator.hpp
 list
 -
 algorithm
 -
+nlohmann/json.hpp
+../include/abstract/nlohmann/json.hpp
 
-../include/abstract_launcher.hpp
+../include/abstract/launcher.hpp
 
-../include/abstract_observer.hpp
+../include/abstract/observer.hpp
 iostream
 -
 sys/ptrace.h
-../include/sys/ptrace.h
+../include/abstract/sys/ptrace.h
 sys/wait.h
 -
 unistd.h
 -
 sys/user.h
-../include/sys/user.h
+../include/abstract/sys/user.h
 
 ../include/modules.hpp
-usual_observer.hpp
-../include/usual_observer.hpp
-target_observer.hpp
-../include/target_observer.hpp
-usual_launcher.hpp
-../include/usual_launcher.hpp
-usual_input_generator.hpp
-../include/usual_input_generator.hpp
+usual/usual_observer.hpp
+../include/usual/usual_observer.hpp
+target/target_input_generator.hpp
+../include/target/target_input_generator.hpp
+usual/usual_launcher.hpp
+../include/usual/usual_launcher.hpp
+usual/usual_input_generator.hpp
+../include/usual/usual_input_generator.hpp
+memory
+../include/memory
 
-../include/target_observer.hpp
-abstract_observer.hpp
-../include/abstract_observer.hpp
+../include/target/target_input_generator.hpp
+abstract/input_generator.hpp
+../include/target/abstract/input_generator.hpp
 
-../include/usual_input_generator.hpp
-abstract_input_generator.hpp
-../include/abstract_input_generator.hpp
+../include/usual/usual_input_generator.hpp
+abstract/input_generator.hpp
+../include/usual/abstract/input_generator.hpp
 fstream
 -
 nlohmann/json.hpp
-../include/nlohmann/json.hpp
+../include/usual/nlohmann/json.hpp
 
-../include/usual_launcher.hpp
-abstract_launcher.hpp
-../include/abstract_launcher.hpp
+../include/usual/usual_launcher.hpp
+abstract/launcher.hpp
+../include/usual/abstract/launcher.hpp
 
-../include/usual_observer.hpp
-abstract_observer.hpp
-../include/abstract_observer.hpp
+../include/usual/usual_observer.hpp
+abstract/observer.hpp
+../include/usual/abstract/observer.hpp
 sstream
 -
 fstream

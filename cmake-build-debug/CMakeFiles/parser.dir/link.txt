@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/parser.dir/parser/main.cpp.o -o parser  libfuzzerd.a 
+/usr/bin/c++ -g CMakeFiles/parser.dir/parser/main.cpp.o -o parser 

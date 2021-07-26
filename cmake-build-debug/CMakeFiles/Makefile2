@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/152/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/152/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,7 +72,6 @@ CMAKE_BINARY_DIR = /home/arseny/CLionProjects/fuzzer/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/fuzzer.dir/all
 all: CMakeFiles/parser.dir/all
 all: CMakeFiles/debugger.dir/all
 
@@ -84,52 +83,24 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/fuzzer.dir/clean
 clean: CMakeFiles/parser.dir/clean
 clean: CMakeFiles/debugger.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/fuzzer.dir
-
-# All Build rule for target.
-CMakeFiles/fuzzer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzer.dir/build.make CMakeFiles/fuzzer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzer.dir/build.make CMakeFiles/fuzzer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target fuzzer"
-.PHONY : CMakeFiles/fuzzer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/fuzzer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fuzzer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/fuzzer.dir/rule
-
-# Convenience name for target.
-fuzzer: CMakeFiles/fuzzer.dir/rule
-
-.PHONY : fuzzer
-
-# clean rule for target.
-CMakeFiles/fuzzer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzer.dir/build.make CMakeFiles/fuzzer.dir/clean
-.PHONY : CMakeFiles/fuzzer.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/parser.dir
 
 # All Build rule for target.
-CMakeFiles/parser.dir/all: CMakeFiles/fuzzer.dir/all
+CMakeFiles/parser.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target parser"
 .PHONY : CMakeFiles/parser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/parser.dir/rule
@@ -148,7 +119,7 @@ CMakeFiles/parser.dir/clean:
 # Target rules for target CMakeFiles/debugger.dir
 
 # All Build rule for target.
-CMakeFiles/debugger.dir/all: CMakeFiles/fuzzer.dir/all
+CMakeFiles/debugger.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/debugger.dir/build.make CMakeFiles/debugger.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/debugger.dir/build.make CMakeFiles/debugger.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target debugger"
@@ -156,7 +127,7 @@ CMakeFiles/debugger.dir/all: CMakeFiles/fuzzer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/debugger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/debugger.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/debugger.dir/rule

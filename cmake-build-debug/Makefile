@@ -58,10 +58,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/152/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/158/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/152/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/158/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /home/arseny/CLionProjects/fuzzer/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/152/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/158/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/152/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/158/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -128,19 +128,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named fuzzer
-
-# Build rule for target.
-fuzzer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fuzzer
-.PHONY : fuzzer
-
-# fast build rule for target.
-fuzzer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzer.dir/build.make CMakeFiles/fuzzer.dir/build
-.PHONY : fuzzer/fast
 
 #=============================================================================
 # Target rules for targets named parser
@@ -222,33 +209,6 @@ parser/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/parser/main.cpp.s
 .PHONY : parser/main.cpp.s
 
-source/void.o: source/void.cpp.o
-
-.PHONY : source/void.o
-
-# target to build an object file
-source/void.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzer.dir/build.make CMakeFiles/fuzzer.dir/source/void.cpp.o
-.PHONY : source/void.cpp.o
-
-source/void.i: source/void.cpp.i
-
-.PHONY : source/void.i
-
-# target to preprocess a source file
-source/void.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzer.dir/build.make CMakeFiles/fuzzer.dir/source/void.cpp.i
-.PHONY : source/void.cpp.i
-
-source/void.s: source/void.cpp.s
-
-.PHONY : source/void.s
-
-# target to generate assembly for a file
-source/void.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzer.dir/build.make CMakeFiles/fuzzer.dir/source/void.cpp.s
-.PHONY : source/void.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -258,7 +218,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... debugger"
-	@echo "... fuzzer"
 	@echo "... parser"
 	@echo "... debugger/main.o"
 	@echo "... debugger/main.i"
@@ -266,9 +225,6 @@ help:
 	@echo "... parser/main.o"
 	@echo "... parser/main.i"
 	@echo "... parser/main.s"
-	@echo "... source/void.o"
-	@echo "... source/void.i"
-	@echo "... source/void.s"
 .PHONY : help
 
 

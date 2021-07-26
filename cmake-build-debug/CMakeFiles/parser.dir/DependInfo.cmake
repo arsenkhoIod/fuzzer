@@ -10,13 +10,11 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
   "/home/arseny/.hunter/_Base/e14bc15/252be92/2cb8efb/Install/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/arseny/CLionProjects/fuzzer/cmake-build-debug/CMakeFiles/fuzzer.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
