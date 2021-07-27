@@ -1,7 +1,3 @@
-//
-// Created by arsenkhoIod on 7/18/21.
-//
-
 #ifndef PARSER_MODULES_HPP
 #define PARSER_MODULES_HPP
 
